@@ -38,7 +38,7 @@ img {
      object-fit: cover;
 }
 
-.center-text, .btn {
+.center-text, .btn, .paypal__button {
   text-align: center;
 }
 
@@ -55,7 +55,7 @@ img {
           transform: translateX(-50%);
 }
 
-.btn {
+.btn, .paypal__button {
   border-radius: 1rem;
   font-size: 3rem;
   color: #fff;
@@ -145,6 +145,7 @@ h2 p {
   font-weight: 300;
   color: #888888;
   font-size: 2.2rem;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -403,7 +404,12 @@ strong {
 @media only screen and (max-width: 480px) {
   .contact h2 {
     line-height: 1;
+    padding-top: 2rem;
   }
+}
+
+.contact h2 p {
+  padding-top: 1rem;
 }
 
 .contact__content {
@@ -613,6 +619,16 @@ form {
 .paypal {
   width: 100%;
   margin-top: 4rem;
+}
+
+.paypal__button {
+  background-color: #0059ff;
+  padding: 0rem 2rem;
+  display: inline-block;
+}
+
+.paypal__button:hover {
+  background-color: #003eb3;
 }
 
 .footer {
