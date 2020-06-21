@@ -13,9 +13,9 @@
         display: flex;
         justify-content: center;
         margin-top: 3rem;
+        align-items: center;
         //media queries
         @include mq($bpSmall) {
-            align-items: center;
             flex-direction: column;
         }
         a {
