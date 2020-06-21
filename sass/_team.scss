@@ -1,0 +1,15 @@
+.team {
+    background-color: $white;
+    @extend .services;
+    &__list {
+        @extend .services__list;
+    }
+    &__item {
+        @extend .services__item;
+        img {
+            width: 100%;
+            @include b-radius-1;
+            height: 30rem;
+        }
+    }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300;1,400&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/main.css">
+    <title>Son de Sol</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <nav class="navbar">
+            <a href="./index.html" class="logo">LOGO</a>
+
+            <ul class="navbar__list">
+                <li class="navbar__item"><a href="./index.html" class="navbar__link navbar__link--home">Home</a></li>
+                <li class="navbar__item"><a href="#about" class="navbar__link">About</a></li>
+                <li class="navbar__item"><a href="#service" class="navbar__link">Services</a></li>
+                <li class="navbar__item"><a href="#team" class="navbar__link">Team</a></li>
+                <li class="navbar__item"><a href="#contact" class="navbar__link">Contact Us</a></li>
+            </ul>
+            <div class="burger-menu">
+                <span class="burger-menu__btn"></span>
+            </div>
+        </nav>
+
+        <h1 class="center-text center-y">Descubre la musica que te gusta
+            <p>Que esperas</p>
+            <a href="#contact" class=" btn btn--header">Descubre más</a>
+
+        </h1>
+
+    </header>
+
+    <main class="main">
+        <section class="about center-text" id="about">
+            <h2>Sobre Nosotros
+                <p>¿Quienes Somos?</p>
+            </h2>
+            <p class="about__body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet lectus congue mi viverra congue in sed leo. Nullam magna nisl, hendrerit non urna et, eleifend pulvinar augue. Suspendisse lacinia molestie ipsum ac semper. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Praesent vel scelerisque purus.</p>
+        </section>
+
+        <section class="services center-text" id="service">
+            <h2>Servicios
+                <p>¿A qué nos dedicamos?</p>
+            </h2>
+
+            <article class="services__list">
+                <figure class="services__item">
+                    <img src="./img/festival.svg" alt="Festival">
+                    <h3>Fiestas</h3>
+                    <p class="services__item-text">Vestibulum odio risus, interdum fringilla vulputate ac, placerat in mi. Vivamus pharetra, mauris vitae cursus ultricies.</p>
+                </figure>
+
+                <figure class="services__item">
+                    <img src="./img/cultures.svg" alt="Festival">
+                    <h3>Eventos Culturales</h3>
+                    <p class="services__item-text">Vestibulum odio risus, interdum fringilla vulputate ac, placerat in mi. Vivamus pharetra, mauris vitae cursus ultricies.</p>
+                </figure>
+
+                <figure class="services__item">
+                    <img src="./img/fireworks.svg" alt="Festival">
+                    <h3>Festivales</h3>
+                    <p class="services__item-text">Vestibulum odio risus, interdum fringilla vulputate ac, placerat in mi. Vivamus pharetra, mauris vitae cursus ultricies.</p>
+                </figure>
+            </article>
+        </section>
+
+        <section class="team center-text" id="team">
+            <h2>Miembros
+                <p>Conocenos</p>
+            </h2>
+
+            <article class="team__list">
+                <figure class="team__item">
+                    <img src="./img/lucy.jpg" alt="Lucy Singer">
+                    <h3>Luisiana Materan</h3>
+                    <p class="services__item-text">
+                        Cantante (Soprano) Aficionada a la ciencia y las artes. Comunity Manager de Son de Sol</p>
+                </figure>
+
+                <figure class="team__item">
+                    <img src="./img/andres.jpg" alt="Guitar">
+                    <h3>Andres Mocharrafin</h3>
+                    <p class="services__item-text">Cantante (Tenor) y Contrabajista. Admirador de cualquier forma de arte. </p>
+                </figure>
+
+                <figure class="team__item">
+                    <img src="./img/Sofia HDR.jpg" alt="Guittar">
+                    <h3>Sofia Sánchez</h3>
+                    <p class="services__item-text">Guitarrista y arreglista. Escritora por hobby y amante del aire libre y la montaña.</p>
+                </figure>
+            </article>
+        </section>
+
+
+        <section class="contact center-text" id="contact">
+            <h2>Descubre más sobre nosotros
+                <p>contactanos</p>
+            </h2>
+
+            <article class="contact__content">
+                <form class="form" id="contactForm">
+                    <figure class="alert">Informacion Recibida</figure>
+                    <div class="input_text-container">
+                        <input type="text" class="input_text" id="name" placeholder="Nombre completo" required>
+                        <input type="email" class="input_text" id="email" placeholder="E-mail" required>
+                        <input type="tel" name="phone" class="input_text input_phone" id="phone" placeholder="Telefono" required>
+                    </div>
+                    <textarea class="textarea" id="message" placeholder="Mensaje"></textarea>
+                    <input type="submit" class="btn btn--form" value="Enviar">
+                </form>
+
+                <figure class="contact__info">
+                    <h3>Nuestra información</h3>
+                    <p>San Fernando de Apure, Apure</p>
+                    <p>Av. Caracas 1222</p>
+                    <a href="tel:0414-331-2112">0414-331-2112</a>
+                    <a href="email:correo@correo.com">correo@correo.com</a>
+
+
+                    <ul class="contact__social">
+                        <li class="contact__social-item">
+                            <a href="https://www.facebook.com/" class="contact__social-link contact__social-link--facebook"></a>
+                        </li>
+                        <li class="contact__social-item">
+                            <a href="" class="contact__social-link contact__social-link--instagram"></a>
+                        </li>
+                        <li class="contact__social-item">
+                            <a href="" class="contact__social-link contact__social-link--youtube"></a>
+                        </li>
+
+                    </ul>
+
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="paypal">
+                        <strong class="center-text">Si deseas puedes dejar una donación. 
+                        se apreciaria mucho.
+                        </strong>
+                        <input type="hidden" name="cmd" value="_donations" />
+                        <input type="hidden" name="business" value="bohorquez866@outlook.com" />
+                        <input type="hidden" name="currency_code" value="USD" />
+                        <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donar con el botón PayPal" />
+                        <img alt="" border="0" src="https://www.paypal.com/es_US/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                </figure>
+
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+    <footer class="footer center-text">
+        <p>Son de Sol, Todos los derechos reservados 2020 &copy;</p>
+    </footer>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBU-lVEC4OAD83aU5rRWB_v2dT7_bC1Jho",
+            authDomain: "sondesol-23457.firebaseapp.com",
+            databaseURL: "https://sondesol-23457.firebaseio.com",
+            projectId: "sondesol-23457",
+            storageBucket: "sondesol-23457.appspot.com",
+            messagingSenderId: "932094753569",
+            appId: "1:932094753569:web:dabd8a32eda48865d71c60",
+            measurementId: "G-71WN5211XY"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

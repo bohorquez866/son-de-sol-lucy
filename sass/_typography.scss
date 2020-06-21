@@ -1,0 +1,46 @@
+h1 {
+    color: $white;
+    font-size: 6rem;
+    position: relative;
+    transform: translateY(-100%)!important;
+    @include mq($bpSmall) {
+        font-size: 4rem;
+        line-height: 1;
+    }
+    p {
+        font-weight: 300;
+        font-size: 5rem;
+        margin: 2rem 0;
+        @include mq($bpSmall) {
+            font-size: 3rem;
+        }
+    }
+}
+
+h2 {
+    font-size: 6rem;
+    color: $heading-color;
+    line-height: 1.5;
+    @include mq($bpSmall) {
+        font-size: 3rem;
+    }
+    p {
+        font-weight: 300;
+        color: $text-color;
+        font-size: 2.2rem;
+    }
+}
+
+h3 {
+    font-size: 3.2rem;
+    @include mq($bpSmall) {
+        font-size: 2rem;
+    }
+}
+
+strong {
+    display: block;
+    line-height: 1;
+    margin-bottom: 2rem;
+    padding: 0 5%;
+}

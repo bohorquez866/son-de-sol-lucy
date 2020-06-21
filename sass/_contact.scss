@@ -1,0 +1,162 @@
+.contact {
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/img/contact-bg.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 5rem;
+    h2 {
+        @include mq($bpSmall) {
+            line-height: 1;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+        //media queries
+        @include mq($bpSmall) {
+            align-items: center;
+            flex-direction: column;
+        }
+        a {
+            color: inherit;
+            display: block;
+            &:hover {
+                color: rgb(153, 0, 255);
+            }
+        }
+    }
+    &__info {
+        line-height: 2;
+        font-size: 1.8rem;
+        color: $heading-color;
+        @include mq($bpSmall) {
+            margin-top: 3rem;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-item {
+            margin-top: 2rem;
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
+    }
+    &__social-link {
+        width: 3rem;
+        height: 3rem;
+        background-size: cover;
+        transition: all .5s ease-in;
+        transform: rotate(0deg);
+        &:hover {
+            transform: rotate(360deg);
+        }
+        &--facebook {
+            background-image: url(../img/facebook.svg);
+        }
+        &--instagram {
+            background-image: url(../img/instagram.svg);
+        }
+        &--youtube {
+            background-image: url(../img/youtube.svg);
+        }
+    }
+}
+
+.alert {
+    padding: 1rem;
+    background-color: rgb(170, 238, 170);
+    margin-bottom: 1rem;
+    display: none;
+}
+
+form {
+    width: 50%;
+    margin-right: 5%;
+    @include mq($bpSmall) {
+        width: 80%;
+        margin: 0;
+    }
+}
+
+.input_text-container {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    @include mq($bpSmall) {
+        flex-direction: column;
+    }
+}
+
+.input_text {
+    width: 49%;
+    @include mq($bpSmall) {
+        width: 100%;
+    }
+    &:first-child {
+        margin-right: 2%;
+        @include mq($bpSmall) {
+            margin-right: 0;
+        }
+    }
+    &::placeholder {
+        padding-left: -1rem;
+    }
+    &:placeholder-shown {
+        border: 1px solid $soft-border;
+    }
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.textarea,
+.input_text {
+    font-family: $primary-font;
+    font-size: 2rem;
+    font-weight: 300;
+    border: 1px solid rgb(94, 149, 140);
+    border-radius: 1rem;
+    padding-left: 1rem;
+    transition: all .2s ease-in;
+    resize: none;
+}
+
+.textarea:focus,
+.input_text:focus {
+    outline: none;
+}
+
+.textarea:placeholder-shown,
+.input_text:placeholder-shown {
+    border: 1px solid $soft-border;
+    font-weight: 300;
+}
+
+.textarea {
+    width: 100%;
+    height: 20rem;
+}
+
+.input_phone {
+    width: 100%;
+}
+
+.paypal {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.footer {
+    background-color: $soft-border;
+    font-family: $secondary-font;
+    p {
+        font-size: 2.5rem;
+        padding: .5rem;
+        @include mq($bpSmall) {
+            font-size: 1.8rem;
+        }
+    }
+}

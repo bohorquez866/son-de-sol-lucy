@@ -1,0 +1,14 @@
+.about {
+    padding: 6rem 15%;
+    &__body-text {
+        font-weight: 700;
+        font-size: 2rem;
+        font-family: $secondary-font;
+        margin-top: 3rem;
+        line-height: 1.8;
+        color: $text-color;
+        @include mq($bpSmall) {
+            font-size: 1.5rem;
+        }
+    }
+}

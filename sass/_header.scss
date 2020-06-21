@@ -1,0 +1,114 @@
+.header {
+    &-container {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(/img/header.webp);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+}
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    padding-top: 2rem;
+    @include mq($bpSmall) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 0 0 0;
+    }
+    &,
+    &__list {
+        display: flex;
+    }
+    &__list {
+        @include mq($bpSmall) {
+            display: none;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 1rem 0;
+            line-height: 1.5;
+        }
+    }
+    .logo {
+        font-size: 3rem;
+        color: $white;
+        display: block;
+        @include mq($bpSmall) {
+            padding-left: 1rem;
+        }
+    }
+    .burger-menu {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        right: 1rem;
+        top: 3rem;
+        height: 2.1rem;
+        width: 2.8rem;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &__btn,
+        &__btn::before,
+        &__btn::after {
+            position: absolute;
+            width: 2.8rem;
+            transition: all 0.5s ease-in-out;
+            height: 3px;
+            background: $white;
+        }
+        &__btn::before,
+        &__btn::after {
+            content: '';
+        }
+        &__btn {
+            right: 0;
+            top: 0.5rem;
+            &::before {
+                top: -8px;
+                height: 3px;
+            }
+            &::after {
+                top: 8px;
+                width: 2rem;
+            }
+        }
+        @include mq($bpSmall) {
+            display: block;
+        }
+    }
+    &__item {
+        font-size: 2rem;
+        &:not(:last-child) {
+            margin-right: max(3rem);
+            @include mq($bpSmall) {
+                margin-right: 0;
+            }
+        }
+    }
+    &__link,
+    &__link:visited {
+        color: $navbar-text;
+        @include mq($bpSmall) {
+            color: $white;
+        }
+        //
+        &:hover {
+            color: $white;
+        }
+    }
+    &__link--home {
+        color: $white!important;
+    }
+}
+
+.btn--header {
+    transform: translateY(15vh);
+    @include mq($bpSmall) {
+        transform: translateY(10vh);
+    }
+}

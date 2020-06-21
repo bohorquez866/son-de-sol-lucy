@@ -1,0 +1,51 @@
+.center-text {
+    text-align: center;
+}
+
+.center-y {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn {
+    @include b-radius-1;
+    font-size: 3rem;
+    color: $white;
+    transition: all .3s ease-in;
+    outline: none;
+    border: none;
+    @extend .center-text;
+    cursor: pointer;
+    &--header {
+        background-color: $header-btn;
+        padding: 2rem 4rem;
+        display: inline-block;
+        @include mq($bpSmall) {
+            padding: 1rem 2rem;
+            font-size: 2.2rem;
+        }
+        &:hover {
+            background-color: darken($header-btn, 20%);
+        }
+    }
+    &--form {
+        font-size: 2.4rem;
+        padding: 1rem 5rem;
+        float: right;
+        margin-top: 1rem;
+        background-color: #4a4a55;
+        @include mq($bpSmall) {
+            float: none;
+            margin: inherit auto;
+        }
+        &:hover {
+            background-color: $btn-brown;
+        }
+    }
+}
