@@ -166,8 +166,8 @@ strong {
 }
 
 .header-container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url(/img/header.webp);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(/img/header.webp);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url(../img/header.webp);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../img/header.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -393,8 +393,8 @@ strong {
 }
 
 .contact {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url(/img/contact-bg.webp);
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/img/contact-bg.webp);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), url(../img/contact-bg.webp);
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/contact-bg.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -4,7 +4,7 @@ const admin = require('firebase-admin');
 const nodemailer = require('nodemailer');
 
 //to make it work you need gmail account
-const gmailEmail = functions.config().gmail.login;
+const gmailEmail = 'bohorquez866@gmail.com';
 const gmailPassword = functions.config().gmail.pass;
 admin.initializeApp();
 
