@@ -10,7 +10,7 @@ let submitForm = e => {
     saveMessages(name, email, phone, message);
 
     //show alert
-    document.querySelector('.alert').style.display = 'block';
+    document.querySelector('.alert').style.display = 'inline-block';
 
     //hide alert after a few seconds
     setTimeout(function() {
@@ -27,29 +27,17 @@ const getVal = selector => document.getElementById(selector).value;
 
 //save messages 
 let saveMessages = (name, email, phone, message) => {
-    let newMessageRef = messagesRef.push();
-    newMessageRef.set({
-        name: name,
-        email: email,
-        phone: phone,
-        message: message
-    });
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/*
- *togles the mobile menu.
- */
+        let newMessageRef = messagesRef.push();
+        newMessageRef.set({
+            name: name,
+            email: email,
+            phone: phone,
+            message: message
+        });
+    }
+    /*
+     *togles the mobile menu.
+     */
 const burguerMenu = document.querySelector('.burger-menu');
 const navbarList = document.querySelector('.navbar__list');
 burguerMenu.addEventListener('click', () => {

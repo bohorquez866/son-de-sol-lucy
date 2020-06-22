@@ -161,7 +161,7 @@ h3 {
 strong {
   display: block;
   line-height: 1;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   padding: 0 5%;
 }
 
@@ -390,6 +390,46 @@ strong {
   width: 100%;
   border-radius: 1rem;
   height: 30rem;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.team__item .link-container {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  font-size: 1px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+}
+
+.team__item .link-container i {
+  color: #888888;
+}
+
+.team__item .link-container i:hover {
+  color: #f8f8f8;
+}
+
+.team__member {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.team__member:hover img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.team__member:hover .link-container {
+  top: 50%;
+  z-index: 100;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  font-size: 6rem;
 }
 
 .contact {
@@ -504,8 +544,11 @@ strong {
 
 .alert {
   padding: 1rem;
-  background-color: #aaeeaa;
-  margin-bottom: 1rem;
+  background-color: #117711;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  border-radius: 1rem;
   display: none;
 }
 
@@ -618,7 +661,7 @@ form {
 
 .paypal {
   width: 100%;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .paypal__button {

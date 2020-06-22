@@ -10,6 +10,35 @@
             width: 100%;
             @include b-radius-1;
             height: 30rem;
+            transition: all .3s ease-in;
+        }
+        .link-container {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            font-size: 1px;
+            transition: all .3s ease-in;
+            i {
+                color: $text-color;
+                &:hover {
+                    color: $section-grey;
+                }
+            }
+        }
+    }
+    &__member {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        &:hover img {
+            filter: brightness(.5);
+        }
+        &:hover .link-container {
+            top: 50%;
+            z-index: 100;
+            transition-delay: .3s;
+            font-size: 6rem;
         }
     }
 }
